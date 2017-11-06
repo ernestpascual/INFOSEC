@@ -103,9 +103,9 @@ public class StudentBean {
 			if (connection != null){ // if true we have session in the database
 			PreparedStatement prep = connection.prepareStatement(sql);
 			
-				
+				// problem isolation: put else 
 				// now commit this to database
-				prep.executeQuery();
+				records = prep.executeQuery();
 			}
 		} catch (SQLException sqle){
 			sqle.printStackTrace();

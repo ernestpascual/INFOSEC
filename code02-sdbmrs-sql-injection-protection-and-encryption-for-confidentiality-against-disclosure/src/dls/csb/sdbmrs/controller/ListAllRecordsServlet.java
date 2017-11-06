@@ -32,7 +32,14 @@ public class ListAllRecordsServlet extends HttpServlet {
 		
 		ResultSet records = new StudentBean().getRecords();
 		
-		//assignment do your reaction paper
+		// perform data binding request
+		request.setAttribute("record",records);
+		
+		// forward this to a JSP page to view all decrypted records
+		request.getRequestDispatcher("viewrecords.jsp")
+		.forward(request, response);
+		
+
 		
 	}
 
