@@ -12,7 +12,8 @@
 <body>
 <h2>DLS-CSB Student Registration Database Management System</h2>
 <p>Record successfully registered. </p>
-<!--  Expression language -->
+<!--  Expression language 
+dispatched from servlet -->
 <p>ID: <b>${student.studentId}</b></p>
 <p>Last Name: <b>${student.lastName}</b></p>
 <p>First Name: <b>${student.firstName}</b></p>
